@@ -1,0 +1,28 @@
+<html>
+<title></title>
+<div class="container">
+    <h1>Waiter Availability</h1>
+    <a href="/days" style="text-decoration: none"> admin dashboard</a>
+
+    <div class="row">
+        <div class="six columns">
+
+            <form class="" action="/waiters/{{user_name}}" method="post">
+                <div class="boxes">
+
+                    {{#each showdays}}
+
+                    <input type="checkbox" name="days" value="{{weekday}}" {{checked}}>
+                    <label for="{{weekday}}"> {{weekday}} </label>
+
+                    {{/each}}
+                </div>
+                <button type="submit" class="button-primary">SUBMIT SHIFTS</button>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+</html>
